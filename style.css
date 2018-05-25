@@ -21,7 +21,10 @@ body {
     left: 10px;
     top: 10px;
     animation-name: move;
-    animation-duration: 5s;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 @keyframes move {
