@@ -16,16 +16,17 @@ body {
 #hero {
     width: 75px;
     height: 75px;
-    outline: 1px dashed green;
+    border: 1px dashed green;
     position: absolute;
     left: 10px;
     top: 10px;
     animation-name: move_right, move_down,
                     move_left501, rotation451,
                     move_left502, rotation452,
-                    color_chage;
-    animation-duration: 5s, 2s, 0.5s, 0.5s, 2.5s, 2.5s, 2.5s;
-    animation-delay: 0s, 5s, 7s, 7s, 9s, 9s, 9s;
+                    color_chage, move_down_right,
+                    square_to_ball;
+    animation-duration: 5s, 2s, 0.5s, 0.5s, 2.5s, 2.5s, 2.5s, 5s, 5s;
+    animation-delay: 0s, 5s, 7s, 7s, 9s, 9s, 9s, 11.5s, 11.5s;
     animation-direction: normal;
     animation-iteration-count: 1;
     animation-timing-function: linear;
@@ -63,6 +64,27 @@ body {
 }
 
 @keyframes color_chage {
-    from {outline: 1px dashed green;}
-    to{outline: 1px dashed blue;}
+    from {border: 1px dashed green;}
+    to{border: 1px dashed blue;}
+}
+
+@keyframes move_down_right {
+    0% {top:200px; left: 10px;}
+    100%{top: 440px; left: 440px;}
+}
+
+@keyframes square_to_ball {
+    from {
+        height: 75px;
+        width: 75px;
+        border-radius: 0;
+        border: 1px dashed blue;
+    }
+    to { 
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        border-color: transparent;
+        background: radial-gradient(green, blue);
+    }
 }
