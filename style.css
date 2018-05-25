@@ -20,9 +20,12 @@ body {
     position: absolute;
     left: 10px;
     top: 10px;
-    animation-name: move_right, move_down;
-    animation-duration: 5s, 2s;
-    animation-delay: 0s, 5s;
+    animation-name: move_right, move_down,
+                    move_left501, rotation451,
+                    move_left502, rotation452,
+                    color_chage;
+    animation-duration: 5s, 2s, 0.5s, 0.5s, 2.5s, 2.5s, 2.5s;
+    animation-delay: 0s, 5s, 7s, 7s, 9s, 9s, 9s;
     animation-direction: normal;
     animation-iteration-count: 1;
     animation-timing-function: linear;
@@ -31,10 +34,35 @@ body {
 
 @keyframes move_right {
     0% {left:10px;}
-    100% {left:505px;}
+    100% {left:500px;}
 }
 
 @keyframes move_down {
     0% {top:10px;}
     100% {top:200px;}
+}
+
+@keyframes move_left501 {
+    0% {left:500px;}
+    100% { left:250px;}
+}
+
+@keyframes move_left502 {
+    0% {left:250px;}
+    100% { left:10px;}
+}
+
+@keyframes rotation451 {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(45deg);}
+}
+
+@keyframes rotation452 {
+    from {transform: rotate(45deg);}
+    to {transform: rotate(90deg);}
+}
+
+@keyframes color_chage {
+    from {outline: 1px dashed green;}
+    to{outline: 1px dashed blue;}
 }
