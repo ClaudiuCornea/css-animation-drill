@@ -6,3 +6,25 @@ body {
     background-attachment: fixed;
     background-position: center;
 }
+
+#stage {
+    width: 600px;
+    height: 600px;
+    outline: 1px solid red;
+}
+
+#hero {
+    width: 75px;
+    height: 75px;
+    outline: 1px dashed green;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    animation-name: move;
+    animation-duration: 5s;
+}
+
+@keyframes move {
+    0% {left:10px; top:10px;}
+    100% {left:500px; top: 10px;}
+}
