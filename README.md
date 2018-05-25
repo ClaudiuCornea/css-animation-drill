@@ -3,7 +3,7 @@
 *Progression : En cours*  
 *Début : Vendredi 25 mai 2018 à 09:30*  
 *Temps accordé : 06:00*  
-*Fin prévue : Vendredi 25 mai 2018 à 16:30*
+*Fin prévue : Vendredi 25 mai 2018 à 16:30*  
 ***Fin réele : Vendredi 25 mai 2018 à 14:33***  
 ## Consignes  
 Exercice, stresstest lancé par notre cher [coach](https://github.com/pixeline) pour vévifier les suivantes :  
